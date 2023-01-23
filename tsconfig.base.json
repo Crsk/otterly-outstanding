@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@otterly-outstanding/cart": ["cart/src/index.ts"]
+      "@otterly-outstanding/cart": ["cart/src/index.ts"],
+      "@otterly-outstanding/shared/ui": ["shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
