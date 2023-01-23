@@ -1,14 +1,17 @@
-import styles from './cart.module.scss';
+import { Banner } from '@otterly-outstanding/shared/ui';
+import { Link } from 'react-router-dom';
+import styles from './cart.module.css';
 
 /* eslint-disable-next-line */
-export interface CartProps {}
+export interface RoutesCartProps {}
 
-export function Cart(props: CartProps) {
+export function RoutesCart(props: RoutesCartProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Cart!</h1>
+      <Banner text="Welcome to the cart." />
+      <Link to="/">Continue Shopping</Link>
     </div>
   );
 }
 
-export default Cart;
+export default RoutesCart;
