@@ -1,6 +1,6 @@
 import { Banner } from '@otterly-outstanding/shared/ui';
 import { Link } from 'react-router-dom';
-import styles from './shop.module.css';
+import styles from './shop.module.scss';
 
 // export interface ShopProps {}
 

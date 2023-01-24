@@ -1,6 +1,6 @@
 import { Banner } from '@otterly-outstanding/shared/ui';
 import { Link } from 'react-router-dom';
-import styles from './cart.module.css';
+import styles from './cart.module.scss';
 
 // export interface RoutesCartProps {}
 
