@@ -1,11 +1,10 @@
 import styles from './shared-ui.module.scss';
 
-/* eslint-disable-next-line */
-export interface SharedUiProps {}
+// export interface SharedUiProps {}
 
-export function SharedUi(props: SharedUiProps) {
+export function SharedUi() {
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       <h1>Welcome to SharedUi!</h1>
     </div>
   );
