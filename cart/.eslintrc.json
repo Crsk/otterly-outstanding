@@ -1,9 +1,9 @@
 {
-  "extends": ["./.eslintrc.base.json", "airbnb", "airbnb-typescript"],
+  "extends": ["airbnb", "airbnb-typescript"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
         "project": ["./tsconfig.*?.json"]
       },
@@ -14,6 +14,10 @@
         "react/react-in-jsx-scope": 0,
         "@typescript-eslint/comma-dangle": 0
       }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
     },
     {
       "files": ["*.js", "*.jsx"],
