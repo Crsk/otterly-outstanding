@@ -1,5 +1,18 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
@@ -7,7 +20,9 @@
     "strict": true,
     "types": ["vite/client", "vitest"],
     "paths": {
-      "@otterly-outstanding/core": ["core/src/index.ts"]
+      "@otterly-outstanding/core": ["core/src/index.ts"],
+      "@otterly-outstanding/cart": ["cart/src/index.ts"],
+      "@otterly-outstanding/shared/ui": ["shared/ui/src/index.ts"]
     }
   },
   "files": [],
@@ -20,5 +35,6 @@
       "path": "./tsconfig.spec.json"
     }
   ],
-  "extends": "./tsconfig.base.json"
+  "compileOnSave": false,
+  "exclude": ["node_modules", "tmp"]
 }
