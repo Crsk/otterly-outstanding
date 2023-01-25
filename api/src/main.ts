@@ -8,7 +8,9 @@ async function bootstrap() {
   const config = app.get(ConfigService);
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
-  Logger.log("Listening at http://localhost:" + process.env.PORT + "/" + globalPrefix);
+  const port = process.env.PORT || 3333;
+  await app.listen(port);
+  Logger.log("Listening at http://localhost:" + port + "/" + globalPrefix);
   Logger.log(`🚀 Application is running in ${config.get("environment")} mode`);
 }
 
